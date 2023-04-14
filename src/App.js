@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import First from './Components/First';
+import BadaPerson from './Components/Person'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <article>
+      <First/>
+      <BadaPerson namee="samarth" age="22" favColor="black" />
+      <BadaPerson namee="sam" age="21" favColor="blue" />
+      <BadaPerson namee="sammy" age="20" favColor="green" />
+    </article>
+  )
 }
 
 export default App;
